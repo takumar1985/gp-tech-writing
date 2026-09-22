@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<title>The 3am Call: What a Real Payments Outage Taught Me</title>
+<meta name="description" content="The call came at 3:14 in the morning. I remember the time because I&#x27;d looked at the clock twenty minutes earlier, couldn&#x27;t sleep, and told myself to s">
+<style>body{font-family:Georgia,serif;max-width:680px;margin:60px auto;padding:0 20px;line-height:1.7;color:#222}h1{font-size:1.9em;line-height:1.3}.byline{color:#666;margin-bottom:30px}a{color:#1a5276}footer{margin-top:60px;border-top:1px solid #ddd;padding-top:20px;font-size:.9em;color:#555}</style></head>
+<body><h1>The 3am Call: What a Real Payments Outage Taught Me</h1>
+<p class="byline">By <strong>Timothy A.</strong>, Consulting Technical Director at <a href="https://us.gp-tech.co.uk">Greenwich Pacific Technology Partners</a></p>
+<p>The call came at 3:14 in the morning. I remember the time because I&#x27;d looked at the clock twenty minutes earlier, couldn&#x27;t sleep, and told myself to stop checking.</p>
+<p>A payments hub had fallen over. Not degraded. Down. The kind of down where the on-call engineer had already tried the three things on the runbook and the runbook had run out.</p>
+<p>By 4am we had forty people on a bridge. By 6am we knew the trigger: a certificate renewal that had worked perfectly in every test environment, because every test environment shared an expiry date the production team had staggered. Nobody had tested the middle state where half the estate trusted the new cert and half didn&#x27;t.</p>
+<p>Here&#x27;s what I took from that night, and it isn&#x27;t technical.</p>
+<p>First: the people who fixed it were the ones who&#x27;d built it, or who&#x27;d bothered to understand it. The org chart didn&#x27;t matter at 3am. The person who knew where the truststore lived mattered.</p>
+<p>Second: the failover had never been exercised under real load. It worked on paper. Paper is where most resilience lives, unfortunately.</p>
+<p>Third: the comms were worse than the outage. Operations knew. Technology knew. But the first the business heard was from a client. If your incident process doesn&#x27;t include who tells the relationship managers, you don&#x27;t have an incident process.</p>
+<p>We restored service by mid-morning. The remediation list took four months. The certificate fix took four minutes.</p>
+<p>I think about that night every time someone shows me a resilience plan that&#x27;s a PDF. Show me the last time you broke something on purpose and timed the recovery. That&#x27;s the only number that matters.</p>
+<p>Timothy A. is Consulting Technical Director at Greenwich Pacific Technology Partners, working with banks and financial institutions on payments, resilience and technology risk. <a href="https://us.gp-tech.co.uk">us.gp-tech.co.uk</a></p>
+<footer>Timothy A. consults to banks and financial institutions on payments modernization, regulated cloud, cyber resilience and technology risk. <a href="https://us.gp-tech.co.uk">us.gp-tech.co.uk</a> · <a href="https://www.gp-tech.co.uk">gp-tech.co.uk</a></footer>
+</body></html>

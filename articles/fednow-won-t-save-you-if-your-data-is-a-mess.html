@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<title>FedNow Won&#x27;t Save You If Your Data Is a Mess</title>
+<meta name="description" content="Every payments conversation in the US right now starts the same way: real-time, ISO 20022, FedNow, RTP. All important. And all beside the point if you">
+<style>body{font-family:Georgia,serif;max-width:680px;margin:60px auto;padding:0 20px;line-height:1.7;color:#222}h1{font-size:1.9em;line-height:1.3}.byline{color:#666;margin-bottom:30px}a{color:#1a5276}footer{margin-top:60px;border-top:1px solid #ddd;padding-top:20px;font-size:.9em;color:#555}</style></head>
+<body><h1>FedNow Won&#x27;t Save You If Your Data Is a Mess</h1>
+<p class="byline">By <strong>Timothy A.</strong>, Consulting Technical Director at <a href="https://us.gp-tech.co.uk">Greenwich Pacific Technology Partners</a></p>
+<p>Every payments conversation in the US right now starts the same way: real-time, ISO 20022, FedNow, RTP. All important. And all beside the point if your underlying data is a mess.</p>
+<p>ISO 20022 gets described as a messaging standard. It isn&#x27;t, not really. It&#x27;s a data model. The message is just the envelope. What&#x27;s inside is structured, rich, unforgiving data: party identifiers, remittance information, purpose codes, structured addresses. If your core holds addresses as three free-text lines, you&#x27;re not doing a format conversion. You&#x27;re doing a data remediation programme. Most institutions haven&#x27;t clocked this yet.</p>
+<p>I&#x27;ve been through enough of these migrations to know where they hurt. It&#x27;s never the message library. It&#x27;s the moment someone realises the sanctions screening engine can&#x27;t parse the new party structure. Or that the reconciliation reports downstream were built on MT940 field positions that no longer exist. Or that the client&#x27;s ERP sends unstructured junk and now expects it back enriched.</p>
+<p>FedNow makes this more acute, not less. Real-time means no batch window to fix things overnight. Your exceptions process becomes a customer experience problem in seconds, not a back-office problem by morning.</p>
+<p>The institutions getting this right started with the data. They mapped what they actually hold, found the gaps, and fixed the sources before touching the messaging layer. The ones struggling bought the adaptor first and discovered the data problem later, in test, on a deadline.</p>
+<p>If you&#x27;re scoping a payments programme, start with a data audit. It&#x27;s unglamorous. It also decides whether the programme lands on time.</p>
+<p>Timothy A., Consulting Technical Director at Greenwich Pacific Technology Partners. Payments modernization, ISO 20022 readiness and delivery: <a href="https://us.gp-tech.co.uk">us.gp-tech.co.uk</a></p>
+<footer>Timothy A. consults to banks and financial institutions on payments modernization, regulated cloud, cyber resilience and technology risk. <a href="https://us.gp-tech.co.uk">us.gp-tech.co.uk</a> · <a href="https://www.gp-tech.co.uk">gp-tech.co.uk</a></footer>
+</body></html>
